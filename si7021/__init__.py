@@ -89,8 +89,8 @@ class Si7021:
             usr |= self.USR_HTRE
         self.bus.write_byte_data(self.addr, self.WRITE_USR_REG, usr)
 
-    def set_resultion(self, bits_rh):
-        """ Select measurement resultion.
+    def set_resolution(self, bits_rh):
+        """ Select measurement resolution.
 
         bits_rh is the number of bits for the RH measurement. Number of
         bits for temperature is choosen accoring to the table in section 6.1
